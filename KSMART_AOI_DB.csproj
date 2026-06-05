@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net8.0-windows;net48</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <AssemblyName>KSMART_AOI_DB</AssemblyName>
+    <RootNamespace>Virinco.WATS.Converter.KohYoung</RootNamespace>
+    <NoWarn>NU1701</NoWarn>
+    <ApplicationIcon>Assets\WBonline.ico</ApplicationIcon>
+    <AssemblyTitle>Koh Young KSMART AOI DB Converter</AssemblyTitle>
+    <Product>Koh Young KSMART AOI DB Converter</Product>
+    <Company>The WATS Company AS</Company>
+    <Copyright>Copyright Ã‚Â© 2026 The WATS Company AS</Copyright>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Virinco.WATS.Testing" Version="*" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.*" />
+    <PackageReference Include="Virinco.WATS.ClientAPI" Version="7.*">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Virinco.WATS.Testing" Version="*" />
+    <Content Include="Assets\WBoffline.ico" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\WBonline.ico" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
